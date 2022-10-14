@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/miEstilo.css">
     <script type="text/javascript" src="BtnVota.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
 </head>
 
 <body>
@@ -184,7 +185,18 @@
             <li>Su punto tecnologico de confianza</li>
         </ul>
         </p>
-
+        <img src="img/estadistica.png" class="styleImg"><br>
+        <table class="tbPer" border="0" align="center">
+            <tr>
+                <td>
+                    <button type="button" class="btn btn-outline-primary" onclick="javascript: estadistica();">Resultados Consolidados</button>
+                    <button type="button" class="btn btn-outline-danger" onclick="javascript: estadistica();"> Resultados por Regiones </button>
+                    <button type="button" class="btn btn-outline-warning" onclick="javascript: estadistica();"> Resultados por Ciudades </button>
+                </td>
+            </tr>
+        </table><br><br>
+        <div id="conEst"></div><br><br>
+        <center><canvas id="grafica" width="200px" align="center"></canvas></center>
     </div><br>
 
     <div id="pie">
