@@ -89,13 +89,13 @@
                         <img src="img/logoVinc1.png" class="estImgLog">
                     </a>
                     <button type="button" class="btn btn-outline-success" onclick="javascript: votar(0);">Voto</button>
-                    <button type="button" class="btn btn-outline-warning" onclick="javascript: votar(0);">Voto</button>
+                    <!--<button type="button" class="btn btn-outline-warning" onclick="javascript: votar(0);">Voto</button>-->
                 </td>
                 <td>
                     <a href="candidato2.html#p1">click en imagen
                         <img src="img/LogoVinc2.png" class="estImgLog">
                     </a>
-                    <button type="button" class="btn btn-outline-success" onclick="javascript: votar(1);">Voto</button>
+                    <!--<button type="button" class="btn btn-outline-success" onclick="javascript: votar(1);">Voto</button>-->
                     <button type="button" class="btn btn-outline-warning" onclick="javascript: votar(1);">Voto</button>
                 </td>
                 <td>
@@ -103,7 +103,7 @@
                         <img src="img/logoVinc.png" class="estImgLog">
                     </a>
                     <button type="button" class="btn btn-outline-success" onclick="javascript: votar(2);">Voto</button>
-                    <button type="button" class="btn btn-outline-warning" onclick="javascript: votar(2);">Voto</button>
+                    <!--<button type="button" class="btn btn-outline-warning" onclick="javascript: votar(2);">Voto</button>-->
                 </td>
             </tr>
             </tr>
@@ -144,7 +144,7 @@
                     <a href="Candidato_4.html">click en imagen
                         <img src="img/LogoVinc4.png" class="estImgLog">
                     </a>
-                    <button type="button" class="btn btn-outline-success" onclick="javascript: votar(3);">Voto</button>
+                    <!--<button type="button" class="btn btn-outline-success" onclick="javascript: votar(3);">Voto</button>-->
                     <button type="button" class="btn btn-outline-warning" onclick="javascript: votar(3);">Voto</button>
                 </td>
                 <td>
@@ -152,10 +152,10 @@
                         <img src="img/LogoVinc5.png" class="estImgLog">
                     </a>
                     <button type="button" class="btn btn-outline-success" onclick="javascript: votar(4);">Voto</button>
-                    <button type="button" class="btn btn-outline-warning" onclick="javascript: votar(4);">Voto</button>
+                    <!--<button type="button" class="btn btn-outline-warning" onclick="javascript: votar(4);">Voto</button>-->
                 </td>
                 <td>
-                    <button type="button" class="btn btn-outline-success" onclick="javascript: votar(5);">Voto</button>
+                    <!--<button type="button" class="btn btn-outline-success" onclick="javascript: votar(5);">Voto</button>-->
                     <button type="button" class="btn btn-outline-warning" onclick="javascript: votar(5);">Voto</button>
                 </td>
             </tr>
@@ -185,18 +185,19 @@
             <li>Su punto tecnologico de confianza</li>
         </ul>
         </p>
-        <img src="img/estadistica.png" class="styleImg"><br>
-        <table class="tbPer" border="0" align="center">
+        <!--<canvas id="grafica" width="300" height="200"></canvas>-->
+        <img src="img/estadistica.png" class="estiloImg"><br>
+        <table>
             <tr>
                 <td>
-                    <button type="button" class="btn btn-outline-primary" onclick="javascript: estadistica();">Resultados Consolidados</button>
-                    <button type="button" class="btn btn-outline-danger" onclick="javascript: estadistica();"> Resultados por Regiones </button>
-                    <button type="button" class="btn btn-outline-warning" onclick="javascript: estadistica();"> Resultados por Ciudades </button>
+                    <button id="clear" type="button" class="btn btn-outline-primary" onclick="javascript: estadistica();">Resultados Consolidados</button>
+                    <button id="limp" type="button" class="btn btn-outline-danger" onclick="javascript: estadistica();">Resultados por Regiones </button>
+                    <button id="vaciar" type="button" class="btn btn-outline-warning" onclick="javascript: estadistica();">Resultados por Ciudades </button>
                 </td>
             </tr>
         </table><br><br>
-        <div id="conEst"></div><br><br>
-        <center><canvas id="grafica" width="200px" align="center"></canvas></center>
+        <div id="conEst"></div><br>
+        <canvas id="grafica" width="300" height="200"></canvas>
     </div><br>
 
     <div id="pie">
